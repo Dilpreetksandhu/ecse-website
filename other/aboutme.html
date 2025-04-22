@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    .profile {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: rgb(41, 187, 187);
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .home-button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: rgb(41, 187, 187);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 2rem;
+      transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: rgb(19, 128, 128);
+    }
+
+    @media screen and (max-width: 600px) {
+      .profile img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .content {
+        padding: 1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="personalpics/12037404_1080_1920_30fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- About Content -->
+  <div class="content">
+    <div class="profile">
+      <img src="personalpics/IMG-20231110-WA0019_Original.jpg" alt="Profile Photo" />
+    </div>
+    <h1>About Me</h1>
+    <p>Hi! I’m Dilpreet, a travel enthusiast and tech lover.</p>
+
+    <p>I’m currently pursuing a degree in Computer Engineering, where I get to blend logic, creativity, and problem-solving to build exciting tech solutions. Beyond the world of code and circuits, I’m someone who loves exploring different forms of expression and creativity.</p>
+
+    <p>Whether it’s the soothing rhythm of singing, the therapeutic flow of pottery, getting lost in the pages of a good book, or experimenting with new flavors in the kitchen, I always try to balance the technical with the artistic.  I believe that having diverse interests not only keeps life interesting but also fuels fresh perspectives in everything I do—whether it’s building software or baking bread. </p>
+
+   
+
+    <h2>Academics and Skills</h2>
+    <p><strong>SSC:</strong> 93.6%</p>
+    <p><strong>HSC:</strong> 86.3%</p>
+    <p><strong>SGPA:</strong> 9.25</p>
+    <p><strong>Skills:</strong> C, C++, HTML, CSS, Python, Java</p>
+    <p><strong>Languages known:</strong> English, Hindi, Marathi, Punjabi, Gujrati</p>
+
+    <p style="text-align: center;">Let's explore the world—one destination at a time 🌍✈️</p>
+
+    <div style="text-align: center;">
+      <a href="/index.html" class="home-button">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
