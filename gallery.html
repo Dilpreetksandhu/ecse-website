@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #000000;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .gallery {
+        display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+      
+      
+    }
+
+    .gallery-item {
+      position: relative;
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: #ddd;
+      padding: 10px;
+      
+    }
+
+    .gallery-item img {
+        width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+      
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    .center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* full height of screen */
+}
+
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .footer span {
+      color: red;
+    }
+  </style>
+</head>
+<body >
+<div class="center-wrapper">
+  <h1 style="text-align: center; color: darkcyan;">My Photo Gallery</h1>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="personalpics/20220507_204013_Original.jpg" alt="Photo 1">
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="personalpics/20220507_205239_Original.jpg" alt="Photo 2">
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="personalpics/20220508_094923_Original.jpg" alt="Photo 3">
+      <div class="caption">Photo 3</div>
+    </div>
+    
+    <div class="gallery-item">
+        <img src="personalpics/20220509_125650_Original.jpg" alt="Photo 5">
+        <div class="caption">Photo 4</div>
+      </div>
+      <div class="gallery-item">
+        <img src="personalpics/20220511_132822_Original.jpg" alt="Photo 6">
+        <div class="caption">Photo 5</div>
+      </div>
+      <div class="gallery-item">
+        <img src="personalpics/20220515_093603_Original.jpg" alt="Photo 7">
+        <div class="caption">Photo 6</div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="personalpics/20241229_214215_Original.jpg" alt="Photo 9">
+        <div class="caption">Photo 7</div>
+      </div>
+      <div class="gallery-item">
+        <img src="personalpics/37744878-328a-4a06-9275-93a2447252fc.JPG" alt="Photo 10">
+        <div class="caption">Photo 8</div>
+      </div>
+      
+      
+      
+      
+
+      <button style="margin-left:5rem; background-color: darkcyan; padding: 1rem; border-radius: 1rem;">
+      <a href="/index.html" style="text-decoration: none; color:azure">← Back to Home</a>
+      </button>
+  </div>
+
+  <div class="footer">
+    &copy; Dilpreet's Travel Diary. Made with <span>❤️</span>
+  </div>
+</div>
+</body>
+</html>
